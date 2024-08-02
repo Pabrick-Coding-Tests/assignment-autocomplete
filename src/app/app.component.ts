@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  title = 'sailpoint-autocomplete';
+  title = 'assignment-autocomplete';
   cities$!: Observable<string[]>;
 
   constructor(private dataSrv: DataService) {}

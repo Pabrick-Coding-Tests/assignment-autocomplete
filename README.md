@@ -1,4 +1,4 @@
-# Sailpoint Autocomplete Exercise
+# Assignment Autocomplete Exercise
 
 You should implement an autocomplete component (suitable for a shared component library).
 
@@ -9,7 +9,11 @@ You should implement an autocomplete component (suitable for a shared component 
 
 To demonstrate it, you should write a minimal webserver in Go or Node.js that serves up the contents of world-cities.txt as required.
 
-Please don't share this exercise or solution on any public profiles. Thanks!
+## Assignment rejected
+
+This assignment was rejected without any feedback.
+So I could assume that this porject is COMPLETELY wrong! 😂
+Even with that I am happy with the result and upload it here as future reference for myself.
 
 ## My approach to the task
 

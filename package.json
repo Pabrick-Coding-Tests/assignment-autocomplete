@@ -1,12 +1,17 @@
 {
-  "name": "sailpoint-searcher",
+  "name": "sailpoint-autocomplete",
+  "author": {
+    "name": "Pablo Jimenez Beneyto",
+    "email": "pjbeneyto@gmail.com"
+  },
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "serve": "node ./server/server.js"
   },
   "private": true,
   "dependencies": {

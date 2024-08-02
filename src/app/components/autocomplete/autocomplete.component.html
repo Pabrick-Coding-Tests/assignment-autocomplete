@@ -1,0 +1,9 @@
+<section class="autocomplete">
+  <input id="autocomplete" class="input" type="text" [placeholder]="currentPlaceholder" [(ngModel)]="currentInput"
+    (input)="onChangeInput($event)">
+
+  @if(filteredList.length !== 0 && isListShowed) {
+  <list id="autocomplete-list" [data]="filteredList" (onClickEmt)="onListClicked($event)"></list>
+  }
+
+</section>

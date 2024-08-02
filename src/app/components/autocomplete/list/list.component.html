@@ -1,0 +1,9 @@
+<section class="options" tabindex="0">
+  <ul class="wrapper">
+    @for (item of data; track trackItems(i, item); let i = $index) {
+    <li class="option" data-testid='list-elem' tabindex="0">
+      <button (click)="onClickOption(item)">{{ item }}</button>
+    </li>
+    }
+  </ul>
+</section>

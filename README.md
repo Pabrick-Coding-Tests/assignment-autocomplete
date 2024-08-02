@@ -1,27 +1,33 @@
-# SailpointSearcher
+# Sailpoint Autocomplete Exercise
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+You should implement an autocomplete component (suitable for a shared component library).
 
-## Development server
+- Do not use any UI libraries such as Bootstrap/Material for the autocomplete logic/UI
+- The UI shouldn't be fancy, but a nice-looking UI will be appreciated
+- The component should be written using Angular
+- Bonus - add meaningful unit tests for your work
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To demonstrate it, you should write a minimal webserver in Go or Node.js that serves up the contents of world-cities.txt as required.
 
-## Code scaffolding
+Please don't share this exercise or solution on any public profiles. Thanks!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## My approach to the task
 
-## Build
+My approach to this task has been guided by my ideal user experience I would like to find.
+The component features an input field that dynamically displays a list of available options as the user types. This functionality alleviates the need for users to remember the complete field value.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Specifically, when the user begins to enter the name of a city, a scrollable list of suggestions will appear below the input field, offering potential matches. Selecting an option from this list will automatically populate the input field with the chosen value, thus enhancing the efficiency and convenience of the user interface.
 
-## Running unit tests
+## How to run the proyect
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Run `npm i` to install the proyect dependecies.
+- Run `npm run serve` to run the server that enables the endpoint with the list of cities provided on the TXT file.
+- Run `npm run start` to start the application.
 
-## Running end-to-end tests
+## Room for improvements
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+I have notice that some cities on the TXT file are duplicated, so it would be nice in terms of the performance to remove those duplications to decrease the size of the list.
 
-## Further help
+The Autocomplete component has been treated as its own module, that's why the sub components that it needs are inside, in this case 'list'. If those sub components where to be used in another part of the app they could be extracted. But to keep it tidy they are inside for now.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The component has its own styling. In case those styles belongs to a global theme, most of those should be extracted to a global styling.

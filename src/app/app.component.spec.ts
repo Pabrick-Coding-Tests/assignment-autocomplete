@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'sailpoint-searcher' title`, () => {
+  it(`should have the 'sailpoint-autocomplete' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('sailpoint-searcher');
+    expect(app.title).toEqual('sailpoint-autocomplete');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, sailpoint-searcher');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, sailpoint-autocomplete'
+    );
   });
 });
